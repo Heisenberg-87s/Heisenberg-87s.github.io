@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cheese :)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="img/png" href="img/cheese.png">
+  <link href='https://fonts.googleapis.com/css?family=Kanit&subset=thai,latin' rel='stylesheet' type='text/css'>
+  <script src="https://kit.fontawesome.com/9b5d098001.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+                
+	<style>
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Kanit', sans-serif;
+                                                
+}
+
+/* Make everyting in middle */
+.main {
+	max-width: 1000px;
+	margin: auto;
+}
+
+h1 {
+	font-size: 50px;
+	word-break: break-all;
+}
+
+.row {
+	margin: 8px -16px;
+}
+
+/* padding Between column */
+.row,
+.row > .column {
+	padding: 8px;
+}
+
+.column {
+	float: left;
+	width: 30%;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.content {
+	background-color: #ECC6E9;
+	padding: 8px;
+
+}
+
+@media screen and (max-width: 900px) {
+	.column {
+		width: 25%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.column {
+		width: 100%;
+	}
+}
+
+
+
+/* For content */
+.rowt {
+	margin: 8px -16px;
+}
+
+/* padding Between column */
+.rowt,
+.rowt > .columnt {
+	padding: 8px;
+}
+
+.columnt {
+	float: left;
+	width: 55%;
+}
+
+.rowt:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.contentt {
+	background-color: #E4A5DF;
+	padding: 8px;
+
+}
+
+@media screen and (max-width: 900px) {
+	.columnt {
+		width: 25%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.columnt {
+		width: 100%;
+	}
+}
+
+
+/* custom btn and custom menu */
+	.fadeR {
+			background: ;
+			border: solid 0.5px ;
+			background: linear-gradient(90deg, 
+				#FFBE6C 0%, #E5602F 35%, #DD0000 100%)
+				;
+			border-radius: 25px;
+			color: white;
+			padding: .75rem 1.5rem;
+		}
+	.navbar a {
+ 			float: left;
+ 			padding: 12px;
+ 			color: #9159DD;
+ 			text-decoration: none;
+ 			font-size: 17px;
+ }
+ 	.navbar a:hover {
+ 		background-color: #FFF2FE;
+ }
+ 	.active {
+ 		background-color: #ECC6E9;
+ 	}
+ 	@media screen and (max-width: 500px) {
+ 		.navbar a {
+ 			float: none;
+ 			display: block;
+ 		}
+ 	}
+
+ 	/* menu */
+ header {
+ 	background-color: #ECC6E9;
+ 	padding: 10px;
+ 	text-align: center;
+ 	font-size: 35px;
+ 	color: #000000;
+ }
+ article {
+ 	-webkit-flex:3 ;
+ 	-ms-flex: 4;
+ 	flex: 3;
+ 	background-color: #E4A5DF;
+ 	padding: 10px;
+ }
+ footer {
+ 	background-color: gray;
+ 	padding: 10px;
+ 	text-align: center;
+ 	color: black;
+ }
+ section {
+ 	display: -webkit-flex;
+ 	display: flex;
+ }
+nav {
+	-webkit-flex: 1;
+	-ms-flex: 1;
+ 	flex: 0;
+ 	background: #ECC6E9;
+ 	padding: 25px
+}
+nav ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+/* IMG desc */
+.container {
+  position: relative;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #D77BD1;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+/* Custom Head text and IMG */
+h1 {
+	font-family: 'Poor Story', system-ui;
+	font-size: 100px;
+  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: #F69FF0;
+  font-weight: bold;
+}
+
+h3 {
+	color: black;
+	padding-left: 20px;
+	font-size: 30px;
+	-webkit-text-stroke-width: 0.5px;
+	-webkit-text-stroke-color: Black;
+}
+
+h3 text {
+	font-size: 20px;
+	color: black;
+}
+
+h3 header1 {
+	font-size: 40px;
+}
+
+p {
+	font-size: 19px;
+	color: black;
+}
+
+.border {
+	border: solid;
+	border-color: #F69FF0;
+	border-radius: 10;
+}
+
+.textbox {
+	border: solid;
+	border-color: #ECC6E9;
+	border-width: thick;
+	background-color: #F69FF0;
+}
+
+b {
+	font-weight: bold;
+}
+
+/* Scroll up to top button */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  font-family: 'Kanit', sans-serif;
+  border: none;
+  outline: none;
+  background-color: #F3C4F1;
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#myBtn:hover {
+  background-color: #EBA7E7;
+}
+
+</style>
+</head>
+<body>
+	<body background="img/ddlcmenu.jpg">
+
+<!-- Scroll up Btn -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">ไปข้างบน</button>
+
+
+<!-- Head Title -->
+		<center>
+			<img src="img/cheese.png" width="56" height="56">
+		<header>
+			<h1><font color	= "#F69FF0">DOKI DOKI WIKI</font></h1>
+		</header>
+<!-- Menu under Head title -->
+<div class="navbar">
+	<a class="active" href="Lantao-Home.html"><i class="fa fa-home"></i> Home</a>
+	<a class="active" href="Lantao-Chr.html"><i class="fa fa-users"></i> Character</a>
+	<a class="active" href="Lantao-End.html"><i class="fa fa-birthday-cake"></i> True Ending</a>
+	<a class="active" href="Lantao.html"><i class="fa fa-pagelines"></i> Bonus</a>
+	<a class="active" href="Lantao-Est.html"><i class="fa fa-eye"></i> Easter Egg</a>
+	<a class="active" href="Lantao-Gall.html"><i class="fa fa-camera"></i> gallery</a>
+	<a class="active" href="Lantao-TH.html"><i class="fa fa-flag"></i> วิธีลงมอดภาษาไทย</a>
+</div>
+			<br>
+			<hr color = "#B075FF" size = "3">
+			<br> <br>
+			</center>
+
+		<section>
+			<nav>
+				<ul>
+					<li><a href="Lantao-Chr.html">Home</a></li><br>
+					<li><a href="Lantao-Chr1.html">Monika</a></li><br>
+					<li><a href="Lantao-Chr2.html">Sayori</a></li><br>
+					<li><a href="Lantao-Chr3.html">Yuri</a></li><br>
+					<li><a href="Lantao-Chr4.html">Natsuki</a></li><br>
+				</ul>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<a href="https://www.youtube.com/watch?v=BbeeuzU5Qc8"><img src="img/DDLC.jpg" width="256" height="256"></a>
+			</nav>
+
+<!-- Content in Article -->
+		<article>
+
+			    
+<!-- Gallery Grid -->
+<div class="row">
+	<div class="column">
+		<div class="content">
+			<a href="Lantao-Chr1.html">
+				<div class="border">
+					<a target="_blank" href="img/Yuri.png">
+			<img src="img/Yuri1.png" alt="me" style="width:100%">
+					</a>
+		<div class="textbox">
+			<h3>
+				ข้อมูลพื้นฐาน
+			</h3>
+		</div>
+
+			<h3>
+				<text>
+					<br> ชื่อ : Yuri (ยูริ)
+					<br> อายุ : 18
+					<br> ส่วนสูง : 5'5" (165 ซม.)
+					<br> เพศ : หญิง
+					<br> ชื่อไฟล์ : yuri.chr
+					<br> ปรากฎตัว : บทที่ 1, บทที่ 2, บทที่ 4
+				</text>
+			</h3>
+		</div>
+	</div>
+</div>
+
+<!-- เนื้อหาข้อมูล -->
+<div class="rowt">
+	<div class="columnt">
+		<div class="contentt">
+			<h3>
+				<header1>
+					Sayori
+				</header1>
+			</h3>
+
+	<p><b>ยูริ</b> (ユリ)เป็นตัวละครหลักของDoki Doki Literature Club! . เธอเป็นสมาชิกของชมรมวรรณกรรมและเป็นตัวละครที่ผู้เล่นสามารถเขียนบทกวีให้ได้</p>
+<br>
+<br>
+<br>
+
+	<h3>
+			รูปร่าง
+	</h3>
+<hr size="2px" color="purple">
+
+	<p>ยูริแสดงออกถึงความเป็นผู้ใหญ่และความซับซ้อนในทุกสิ่งที่เธอทำ เธอมีผมสีม่วงเข้มยาวถึงเอวและดวงตาสีม่วงอ่อน และเธอสวมปิ่นปักผมสีม่วงที่ศีรษะทั้งสองข้าง โดยวางไว้บนผมสองเส้นที่โดดเด่นข้างผมหน้าม้าของเธอ เธอมีส่วนสูงสูงกว่าค่าเฉลี่ย</p>
+
+	<p>ระหว่างโรงเรียน เธอสวมชุดนักเรียนหญิงรุ่นมาตรฐาน ประกอบด้วยเสื้อเบลเซอร์สีเทาอบอุ่น ติดกระดุมและดึงออก เสื้อกั๊กสเวตเตอร์สีน้ำตาล เสื้อเชิ้ตสีขาวปลดกระดุมเล็กน้อยที่ปกเสื้อและจับจีบ ริบบิ้นสีแดง กระโปรงจีบสีน้ำเงินเข้ม ถุงเท้ายาวถึงเข่าสีขาว และรองเท้าแตะอุวาบากิสีขาวปลายฟ้า</p>
+
+	<p>ขณะที่อยู่นอกโรงเรียน เธอสวมเสื้อสเวตเตอร์คอเต่าแขนยาวสีเบจ คู่กับเลกกิ้งสีดำ ตัวเอก อธิบายว่าการ เคลื่อนไหวของเธอดูสง่างามอย่างน่าประหลาดใจเนื่องจากขาที่ยาวของเธอ</p>
+
+	<p>นอกจากนี้เธอยังมีพัฒนาการทางร่างกายมากที่สุดอีกด้วย ซึ่งเพิ่มลักษณะความเป็นผู้ใหญ่และความไม่มั่นคงของเธอเข้าไปด้วย</p>
+
+	<h3>
+		บุคลิกภาพ
+	</h3>
+<hr size="2px" color="purple">
+
+<p>ยูริถูกแสดงให้เห็นตลอดทั้งเกมว่าเป็นคนขี้อาย ใจกว้าง สุภาพ ขอโทษ ฉลาดมาก เป็นผู้ใหญ่ มีวาทศิลป์ และหลงใหลในหัวข้อที่เธอสนใจ แม้ว่าเธอจะเป็นคนไม่มั่นคง อึดอัด และมีแนวโน้มที่จะแสดงตัวก็ตาม วางตัวเล็กน้อยและอุปถัมภ์เพื่อปกปิดความสงสัยในตนเองของเธอ อย่างไรก็ตาม ส่วนหน้าของความเฉยเมยและนิสัยหัวสูงของเธอแตกสลายในบางครั้ง ในขณะที่ยูริโต้เถียงอย่างกระตือรือร้นและก้าวร้าวกับนัตสึกิเกี่ยวกับความคิดเห็นที่แตกต่างกันเกี่ยวกับรูปแบบการเขียนและประเภทของวรรณกรรม ยูริมีความปรารถนาอย่างแรงกล้าที่จะให้คนอื่นชอบ และกลัวที่จะพูดความคิดของเธอในเรื่องบางอย่าง เนื่องจากเธอเชื่อว่ามันจะทำให้เธอดูไม่น่าดู เนื่องจากความไม่ฉลาดทางสังคมของเธอ เธอจึงไร้ความรู้สึกอย่างบริสุทธิ์ใจ แต่เมื่อเธอตระหนักว่าสิ่งที่เธอพูดอาจถือเป็นการหยาบคาย เธอก็เกือบจะขอโทษทันที และพูดซ้ำแล้วซ้ำอีกว่าเธอไม่ได้ตั้งใจ ตามที่ตัวเอกกล่าวไว้ ยูริชอบคิดก่อนที่จะพูดอะไร</p>
+
+<p>ยูริชอบที่จะกลมกลืนไปกับทิวทัศน์มากกว่าเพื่อดึงดูดความสนใจที่ไม่ต้องการ การระบุแหล่งที่มายังเกิดจากการเขินอายต่อการอภิปรายนอกเหนือจากประเภทที่เธอสนใจ ความสนใจของเธอคือวรรณกรรม ความสยองขวัญ และสถิตยศาสตร์ทั่วไป ซึ่งเธอตรวจสอบและสื่อสารอย่างเชี่ยวชาญและสนับสนุนให้ผู้อื่นติดตามเช่นกัน ในระหว่างบทที่ 1 นัตสึกิและยูริถกเถียงกันเกี่ยวกับสไตล์การเขียนที่แตกต่างกันของพวกเขา การเลือกข้างนัตสึกิจะทำให้ยูริเขินอายจากผู้เล่น และหากตัวเอกพยายามอ่านบทกวีของตนให้ยูริฟัง เธอจะไม่ตอบสนอง ซึ่งจะทำให้ตัวเอกตัดสินใจว่าจะปล่อยเธอไว้ตามลำพังจะดีที่สุด หากผู้เล่นเรียกร้องให้ซาโยริคลี่คลายสถานการณ์ ซาโยริจะชมทั้งยูริและนัตสึกิในเรื่องการเขียน รูปลักษณ์ และความสามารถของพวกเขา กลยุทธ์นี้จะทำให้สาวทั้งสองพอใจ แต่ก็ทำให้พวกเขาเขินอายเช่นกัน</p>
+
+<p>ความรักเหนือจริงของยูริดูเหมือนจะเป็นลางบอกเหตุเหตุการณ์ต่อไปของเกม ด้วยดวงตาที่เหนือจริงของยูริและเกมที่เปลี่ยนไปอย่างกะทันหันไปสู่ความสยองขวัญหลังจากการฆ่าตัวตายของซาโยริ ยูริชอบบทกวีที่ใช้สัญลักษณ์เชิงเปรียบเทียบ และชอบสะสมมีดหรูหราแปลกตา ซึ่งมีความหมายเป็นนัยว่าใช้เพื่อทำร้ายตัวเอง บทสรุปโดยละเอียดของ นวนิยาย เรื่อง Portrait of Markovในบทแรกและครั้งที่สอง เมื่อคำนึงถึงการอ้างอิงบทสนทนาที่กระจัดกระจายด้วย ทั้งหมดนี้จบลงด้วยการสืบย้อนถึงธรรมชาติที่ไม่มั่นคงและบุคลิกภาพที่ไม่เข้าท่าของเธอ</p>
+
+<p>ยูริภูมิใจในบทกวีของเธอมากและมองว่าบทกวีของเธอเหนือกว่าสมาชิกคนอื่นๆ ในชมรม โดยเฉพาะนัตสึกิ ตามที่ Dan Salvato กล่าว นี่เป็นกลไกในการรับมือกับความไม่มั่นคงอย่างลึกซึ้งและความสงสัยในตนเองของเธอ โดยโน้มน้าวตัวเองว่าเธอเป็นคนฉลาด เป็นผู้ใหญ่ และนักวิจารณ์หรือคู่แข่งของเธอยังไม่บรรลุนิติภาวะและเป็นเด็ก สิ่งนี้สามารถทำให้เธอดูหยิ่งและอุปถัมภ์ผู้ที่ไม่คุ้นเคยกับเธอ ความปรารถนาที่จะดูเหมือนมีสติปัญญาสะท้อนให้เห็นในรูปแบบบทกวีของเธอ บทกวีของเธอเต็มไปด้วยคำอุปมาอุปไมยและภาษาขั้นสูงจนความหมายมักถูกบดบังหรือสูญหายไป ในMonika's Talkขณะพูดถึงนิสัยการดื่มชาของยูริขณะอ่านหนังสือ โมนิก้าสงสัยว่ายูริมีความหลงใหลในหัวข้อบางหัวข้อพอๆ กับที่เธอพูดออกไป หรือว่าเธอ "แค่กังวลว่าคนอื่นจะดูซับซ้อน"</p>
+
+<p>ยูริมีปัญหาในการผูกมิตรและรักษาเพื่อนไว้ เนื่องจากเธอมีแนวโน้มที่จะแสดงออกมากเกินไป เนื่องจากความปรารถนาอันแรงกล้าที่จะเป็นที่ชื่นชอบ เธอเคยถูกตัดสินจากรูปร่างหน้าตาและกิริยาท่าทางของเธอ โดยให้คำอธิบายที่เป็นไปได้อีกประการหนึ่งว่าทำไมเธอถึงแยกตัวออกจากวิถีชีวิตแบบเก็บตัว อย่างไรก็ตาม เธอเป็นคนมีน้ำใจและเป็นผู้ให้ โดยมีตัวอย่างจากการที่เธอมอบสำเนาภาพเหมือนของมาร์คอฟให้กับตัวเอก และนำชาไปที่ชมรมวรรณกรรมเพื่อช่วยปลอบประโลมจิตใจและช่วยให้มีสมาธิในระหว่างการอ่านหนังสือ</p>
+
+<p>ในระหว่างบทที่ 2 โมนิก้าได้ขยายลักษณะบุคลิกภาพเชิงลบของยูริ ทำให้เธอหลงใหลในตัวเอกจนกลายเป็นความหลงใหลที่ไม่ดีต่อสุขภาพ จนถึงจุดหนึ่งยูริยอมรับว่าเธอสัมผัสตัวเองด้วยปากกาที่เธอหยิบมาจากเขา และงานอดิเรกที่มีอยู่แล้วของเธอที่เกี่ยวข้องกับการสะสมมีดก็กลายเป็น รักการทำร้ายตัวเองถึงขั้นที่โมนิก้าแนะนำว่ายูริกรีดตัวเองเพราะเครื่องราง สิ่งนี้ยังทำให้เธอกลายเป็นคนรุกรานและวางตัวต่อสมาชิกคลับคนอื่น ๆ โดยถามนัตสึกิว่า "ทำไมคุณไม่มองหาเหรียญใต้ตู้ขายของอัตโนมัติล่ะ?" ซึ่งทำให้นัตสึกิร้องไห้และวิ่งหนีไป มีอยู่ครั้งหนึ่ง ยูริแสดงบทกวีที่มีคราบเลือดและเศษขยะให้พระเอกดู โดยบอกว่าเธอ 'ใส่กลิ่นของเธอ' ยูริจะตระหนักถึงสิ่งที่เธอทำจริงๆ และออกจากชมรม โดยระบุว่าเธอกำลังจะอาเจียน</p>
+
+<p>หากบทกวีทั้งสามบทเขียนให้กับยูริในบทที่ 2 ฉากที่ยูริถูกพบว่ากำลังกรีดกรีดตัวเองจะเกิดขึ้นอีกครั้ง แต่จากนั้นจะแสดงให้ยูริเห็นด้วยดวงตาที่ว่างเปล่าและสไปรท์ที่ผิดพลาด หลังจากนั้น เธอจะรู้สึกไม่สงบเล็กน้อย โดยบอกว่าเธอมีเดจาวูที่ร้ายแรง จากนั้นเธอจะพูดถึงว่าเธอดูถูกอยู่เสมอว่าเธอตื่นเต้นเกินไปเล็กน้อยกับหัวข้อบางอย่างที่ทำให้เธอแยกตัวจากคนอื่น จากนั้นเธอก็ถามผู้เล่นเกี่ยวกับโมนิก้า และวิธีที่เธอเปลี่ยนจากสาวหวานไปสู่การบงการมากขึ้น แต่แล้วเธอก็จะเล่าว่าในที่สุดพวกเขาก็อยู่ตามลำพัง โดยห่างจาก "ลิ้นเมือกของโมนิก้า" และนัตสึกิที่เป็น "เด็กน่าสงสาร" จากนั้นเธอจะพยายามโน้มน้าวให้ตัวละครหลักอยู่กับเธอ และดูเหมือนจะตื่นเต้นอย่างเปิดเผย โดยมีรูม่านตาผิดพลาดแบบสุ่ม สปิริตของโมนิก้าจะค่อยๆ จางหายไปในสายตา ครอบคลุมยูริในขณะที่บทสนทนาของเธอดำเนินต่อไป</p>
+
+<p>ยูริตระหนักดีว่ามีบางอย่างผิดปกติในตัวเธอ รวมถึงความคิดเห็นและพฤติกรรมของเธอที่ไม่เหมาะสม มากพอที่จะรู้สึกว่าสิ่งเลวร้ายจะเกิดขึ้นแม้ว่าเธอจะมีความสุขก็ตาม ในที่สุดเธอก็ไม่สามารถควบคุมการระเบิดอารมณ์ที่ครอบงำจิตใจของเธอได้ ไม่ว่าเธอจะพยายามแค่ไหนก็ตาม ถึงจุดที่หลังจากที่เธอสารภาพรักกับตัวเอกแล้วเธอก็แทงตัวเองตายไม่ว่าผู้เล่นจะยอมรับหรือปฏิเสธความรักของเธอก็ตาม ร่างของยูริถูกทิ้งให้เน่าเปื่อยเป็นเวลาสามวัน และถูกค้นพบโดยนัตสึกิ ซึ่งอาเจียนออกมาทันทีและวิ่งหนีไป เมื่อเธอถูกค้นพบโดยโมนิก้า ทั้งไฟล์ของยูริและ นั ตสึกิจะถูกลบออก ซึ่งนำไปสู่บทที่ 3</p>
+
+<h3>
+	คำศัพท์ ที่ชอบ
+</h3>
+<hr size="2px" color="purple">
+<center><p><b>บทที่ 1</b></p></center>
+	<p>
+		<br>- ภาพติดตา, ความทุกข์ทรมาน, สภาพแวดล้อม, การวิเคราะห์, ความวิตกกังวล, การชดใช้, ออร่า
+		<br>- หายใจ
+		<br>- เคจ, เชลย, ไคลแม็กซ์, การปนเปื้อน, โลเวท, แดงเข้ม
+		<br>- ความปรารถนา ความดูหมิ่น โชคชะตา ความมุ่งมั่น ความหายนะ ความระส่ำระสาย สับสน ละทิ้งความฝัน
+		<br>- มีประสิทธิภาพ, ไฟฟ้า, เอนโทรปี, แก่นแท้, นิรันดร, การดำรงอยู่, ระเบิด, สุดขั้ว
+		<br>- เปื่อย, ไม่แน่นอน, หลบหนี, น่ากลัว
+		<br>- สุสาน
+		<br>- สวรรค์, สยองขวัญ
+		<br>- จินตนาการ, ไม่สามารถ, ไม่สอดคล้องกัน, ไม่มีข้อผิดพลาด, นรก, ไม่มีที่สิ้นสุด, ทางปัญญา, ความเข้าใจ
+		<br>- การเดินทาง การพิพากษา
+		<br>- ทิวทัศน์, ตัณหา
+		<br>- การสังหารหมู่ ความขาดแคลน ความเศร้าโศก
+		<br>- ปรัชญา ความสุข ภาพเหมือน
+		<br>- คำถาม
+		<br>- เม็ดฝน
+		<br>- ความลับ ความรู้สึก สตาร์สเคป การฆ่าตัวตาย
+		<br>- หวงแหนเวลา
+		<br>- แปลกประหลาด, ไม่สามารถควบคุมได้, ไม่มีที่สิ้นสุด, จักรวาล, ไม่ถูกยับยั้ง, ไม่เสถียร
+		<br>- ความแปรปรวน, เวียนศีรษะ, มีชีวิตชีวา, มีชีวิตชีวา, มีชีวิตชีวา, สดใส
+		<br>- ลมกรด, ความโกรธเกรี้ยว
+	</p>
+
+<center><p><b>บทที่ 2</b><br>
+คำเหล่านี้ถูกเพิ่มเข้าไปในรายการคำศัพท์ของนัตสึกิในระหว่างบทที่ 2</p></center>
+	<p>
+		<br>- ตามลำพัง
+		<br>- แตกหัก
+		<br>- ใจเย็นๆ ร้องไห้
+		<br>- ความมืด ฝันกลางวัน ความตาย ความพ่ายแพ้ ความหดหู่
+		<br>- โอบกอด, ว่างเปล่า
+		<br>- กลัว ให้อภัย
+		<br>- ความโศกเศร้า
+		<br>- ความหวัง ความสิ้นหวัง ความเจ็บปวด
+		<br>- จอย
+		<br>- ความทุกข์ยาก, โชคร้าย
+		<br>- ความเจ็บปวด ความสงบ การอธิษฐาน
+		<br>- ดอกกุหลาบ
+		<br>- รอยแผลเป็น ความอัปยศ
+		<br>- น้ำตาโศกนาฏกรรม
+		<br>- ไม่สมหวัง
+	</p>
+
+				
+		</div>
+	</div>
+</div>
+
+				<a href="https://www.youtube.com/watch?v=BbeeuzU5Qc8">
+					<img src="img/yuri-sticker.png" width="8%">
+					<img src="img/yuri-sticker1.png" width="8%">
+				</a>
+</article>
+</section>
+
+<script>
+// เพิ่มบุ่มให้ทำงาน
+let mybutton = document.getElementById("myBtn");
+
+// ระยะ
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// กดแล้วข้ึน
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>

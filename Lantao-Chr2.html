@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cheese :)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="img/png" href="img/cheese.png">
+  <link href='https://fonts.googleapis.com/css?family=Kanit&subset=thai,latin' rel='stylesheet' type='text/css'>
+  <script src="https://kit.fontawesome.com/9b5d098001.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+                
+	<style>
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Kanit', sans-serif;
+                                                
+}
+
+/* Make everyting in middle */
+.main {
+	max-width: 1000px;
+	margin: auto;
+}
+
+h1 {
+	font-size: 50px;
+	word-break: break-all;
+}
+
+.row {
+	margin: 8px -16px;
+}
+
+/* padding Between column */
+.row,
+.row > .column {
+	padding: 8px;
+}
+
+.column {
+	float: left;
+	width: 30%;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.content {
+	background-color: #ECC6E9;
+	padding: 8px;
+
+}
+
+@media screen and (max-width: 900px) {
+	.column {
+		width: 25%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.column {
+		width: 100%;
+	}
+}
+
+
+
+/* For content */
+.rowt {
+	margin: 8px -16px;
+}
+
+/* padding Between column */
+.rowt,
+.rowt > .columnt {
+	padding: 8px;
+}
+
+.columnt {
+	float: left;
+	width: 55%;
+}
+
+.rowt:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.contentt {
+	background-color: #E4A5DF;
+	padding: 8px;
+
+}
+
+@media screen and (max-width: 900px) {
+	.columnt {
+		width: 25%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.columnt {
+		width: 100%;
+	}
+}
+
+
+/* custom btn and custom menu */
+	.fadeR {
+			background: ;
+			border: solid 0.5px ;
+			background: linear-gradient(90deg, 
+				#FFBE6C 0%, #E5602F 35%, #DD0000 100%)
+				;
+			border-radius: 25px;
+			color: white;
+			padding: .75rem 1.5rem;
+		}
+	.navbar a {
+ 			float: left;
+ 			padding: 12px;
+ 			color: #9159DD;
+ 			text-decoration: none;
+ 			font-size: 17px;
+ }
+ 	.navbar a:hover {
+ 		background-color: #FFF2FE;
+ }
+ 	.active {
+ 		background-color: #ECC6E9;
+ 	}
+ 	@media screen and (max-width: 500px) {
+ 		.navbar a {
+ 			float: none;
+ 			display: block;
+ 		}
+ 	}
+
+ 	/* menu */
+ header {
+ 	background-color: #ECC6E9;
+ 	padding: 10px;
+ 	text-align: center;
+ 	font-size: 35px;
+ 	color: #000000;
+ }
+ article {
+ 	-webkit-flex:3 ;
+ 	-ms-flex: 4;
+ 	flex: 3;
+ 	background-color: #E4A5DF;
+ 	padding: 10px;
+ }
+ footer {
+ 	background-color: gray;
+ 	padding: 10px;
+ 	text-align: center;
+ 	color: black;
+ }
+ section {
+ 	display: -webkit-flex;
+ 	display: flex;
+ }
+nav {
+	-webkit-flex: 1;
+	-ms-flex: 1;
+ 	flex: 0;
+ 	background: #ECC6E9;
+ 	padding: 25px
+}
+nav ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+/* IMG desc */
+.container {
+  position: relative;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #D77BD1;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+/* Custom Head text and IMG */
+h1 {
+	font-family: 'Poor Story', system-ui;
+	font-size: 100px;
+  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: #F69FF0;
+  font-weight: bold;
+}
+
+h3 {
+	color: black;
+	padding-left: 20px;
+	font-size: 30px;
+	-webkit-text-stroke-width: 0.5px;
+	-webkit-text-stroke-color: Black;
+}
+
+h3 text {
+	font-size: 20px;
+	color: black;
+}
+
+h3 header1 {
+	font-size: 40px;
+}
+
+p {
+	font-size: 19px;
+	color: black;
+}
+
+.border {
+	border: solid;
+	border-color: #F69FF0;
+	border-radius: 10;
+}
+
+.textbox {
+	border: solid;
+	border-color: #ECC6E9;
+	border-width: thick;
+	background-color: #F69FF0;
+}
+
+b {
+	font-weight: bold;
+}
+
+/* Scroll up to top button */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  font-family: 'Kanit', sans-serif;
+  border: none;
+  outline: none;
+  background-color: #F3C4F1;
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#myBtn:hover {
+  background-color: #EBA7E7;
+}
+
+</style>
+</head>
+<body>
+	<body background="img/ddlcmenu.jpg">
+
+<!-- Scroll up Btn -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">ไปข้างบน</button>
+
+
+<!-- Head Title -->
+		<center>
+			<img src="img/cheese.png" width="56" height="56">
+		<header>
+			<h1><font color	= "#F69FF0">DOKI DOKI WIKI</font></h1>
+		</header>
+<!-- Menu under Head title -->
+<div class="navbar">
+	<a class="active" href="Lantao-Home.html"><i class="fa fa-home"></i> Home</a>
+	<a class="active" href="Lantao-Chr.html"><i class="fa fa-users"></i> Character</a>
+	<a class="active" href="Lantao-End.html"><i class="fa fa-birthday-cake"></i> True Ending</a>
+	<a class="active" href="Lantao.html"><i class="fa fa-pagelines"></i> Bonus</a>
+	<a class="active" href="Lantao-Est.html"><i class="fa fa-eye"></i> Easter Egg</a>
+	<a class="active" href="Lantao-Gall.html"><i class="fa fa-camera"></i> gallery</a>
+	<a class="active" href="Lantao-TH.html"><i class="fa fa-flag"></i> วิธีลงมอดภาษาไทย</a>
+</div>
+			<br>
+			<hr color = "#B075FF" size = "3">
+			<br> <br>
+			</center>
+
+		<section>
+			<nav>
+				<ul>
+					<li><a href="Lantao-Chr.html">Home</a></li><br>
+					<li><a href="Lantao-Chr1.html">Monika</a></li><br>
+					<li><a href="Lantao-Chr2.html">Sayori</a></li><br>
+					<li><a href="Lantao-Chr3.html">Yuri</a></li><br>
+					<li><a href="Lantao-Chr4.html">Natsuki</a></li><br>
+				</ul>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<a href="https://www.youtube.com/watch?v=BbeeuzU5Qc8"><img src="img/DDLC.jpg" width="256" height="256"></a>
+			</nav>
+
+<!-- Content in Article -->
+		<article>
+
+			    
+<!-- Gallery Grid -->
+<div class="row">
+	<div class="column">
+		<div class="content">
+			<a href="Lantao-Chr1.html">
+				<div class="border">
+					<a target="_blank" href="img/Sayori.png">
+			<img src="img/Say1.png" alt="me" style="width:100%">
+					</a>
+		<div class="textbox">
+			<h3>
+				ข้อมูลพื้นฐาน
+			</h3>
+		</div>
+
+			<h3>
+				<text>
+					<br> ชื่อ : Sayori (ซาโยริ)
+					<br> อายุ : 18
+					<br> ส่วนสูง : 5'2" (157 ซม.)
+					<br> เพศ : หญิง
+					<br> ชื่อไฟล์ : sayori.chr
+					<br> ปรากฎตัว : บทที่ 1, บทที่ 4
+				</text>
+			</h3>
+		</div>
+	</div>
+</div>
+
+<!-- เนื้อหาข้อมูล -->
+<div class="rowt">
+	<div class="columnt">
+		<div class="contentt">
+			<h3>
+				<header1>
+					Sayori
+				</header1>
+			</h3>
+
+	<p><b>ซาโยริ</b> (サヨリ)เป็นตัวละครหลักของDoki Doki Literature Club! . เธอเป็นรองประธานชมรมวรรณกรรมซึ่งเป็นเพื่อนสมัยเด็กของ ตัวเอก และเป็นตัวละครที่ผู้เล่นสามารถเขียนบทกวีให้ได้</p>
+<br>
+<br>
+<br>
+
+	<h3>
+			รูปร่าง
+	</h3>
+<hr size="2px" color="purple">
+
+	<p>ซาโยริมีผมสีชมพูปะการัง ผมยาวคาง และม้วนผมเล็กน้อยที่ปลาย มีโบว์สีแดงขนาดใหญ่ที่ด้านซ้ายบนของศีรษะ เช่นเดียวกับตัวละครหญิงอื่นๆ เธอมีผมสองเส้นที่โดดเด่นข้างผมหน้าม้า และดวงตาของเธอเป็นสีฟ้าสดใส เธอมีส่วนสูงที่เตี้ยถึงปานกลาง ซึ่งทำให้เธอเป็นตัวละครที่เตี้ยเป็นอันดับสองในเกม รองจากนัตสึกิ</p>
+
+	<p>เมื่ออยู่ในโรงเรียน เธอสวมชุดนักเรียนหญิงรุ่นมาตรฐานซึ่งประกอบด้วยเสื้อเบลเซอร์สีเทาอบอุ่นปลดกระดุมและปลดกระดุมออกทั้งหมด เสื้อกั๊กสเวตเตอร์สีน้ำตาล เสื้อเชิ้ตสีขาวปลดกระดุมเล็กน้อยและคดที่ปกเสื้อและจับจีบ ริบบิ้นสีแดงหลุดออก กระโปรงจีบสีน้ำเงินเข้ม สีขาว ถุงเท้ายาวถึงเข่าและรองเท้าแตะอุวาบากิสีขาวปลายฟ้า</p>
+
+	<p>เมื่ออยู่นอกโรงเรียน เธอสวมเสื้อเชิ้ตสีชมพู พับแขนยาว และกางเกงขาสั้นสีน้ำเงิน เช้าวันที่เธอเสียชีวิต เธอสวมเสื้อเชิ้ตสีขาวคอปกสีน้ำตาล ซึ่งมีกระเป๋าแต่ละข้าง มีรอยพับสีน้ำตาล และมีกระดุมสีดำ 6 เม็ด ด้านบนปลดกระดุม กางเกงขาสั้นทรงเข้ารูปสีแดง และเดินเท้าเปล่า</p>
+
+	<h3>
+		บุคลิกภาพ
+	</h3>
+<hr size="2px" color="purple">
+
+<p>ในตอนแรก ซาโยริได้รับบทเป็นต้นแบบตัวละครของเก็นกิเกิร์ล โดยแสดงออกถึงนิสัยที่ร่าเริงและร่าเริง เธอเป็นคนซุ่มซ่ามมาก มีชื่อเสียงจากการหาวิธีทำร้ายตัวเองโดยไม่ตั้งใจหรือทำของหล่น อย่างไรก็ตาม เธอแสดงให้เห็นว่าเป็นคนเจ้าเล่ห์และมีไหวพริบที่สามารถหลอกคนอื่นให้ซื้ออาหารได้ โดยแสดงให้เห็นหลังจากกินคุกกี้ของนัตสึกิโดยไม่ได้รับอนุญาตจากเธอ ซาโยริยังเป็นที่รู้จักของตัวเอกว่าหมกมุ่นอยู่กับกิจกรรมที่เธอไม่สนใจในภายหลัง เธอกล่าวว่าการเขียนบทกวีและการศึกษาวรรณกรรมนั้นแตกต่างจากที่เธอสนใจมากกว่าความสนใจอื่นๆ เพราะมันช่วยให้เธอสำรวจความรู้สึกของเธอได้</p>
+
+<p>อย่างไรก็ตาม มีการเปิดเผยในภายหลังว่าเธอต้องทนทุกข์ทรมานจากภาวะซึมเศร้า และทำงานอย่างหนักเพื่อทำให้ผู้คนรอบตัวเธอมีความสุขที่จะรับมือกับการขาดความรักตนเองเหนือสิ่งอื่นใด โดยปกติแล้วเธอยังเป็นตัวละครเพียงตัวเดียว นอกเหนือจากตัวเอก ที่แสดงการโต้แย้ง โมนิก้าสังเกตว่าความรู้สึกของเธอมีความจำเป็นเพื่อรักษาบรรยากาศที่ผ่อนคลายในชมรมวรรณกรรม สิ่งนี้พิสูจน์ได้จากการที่เธอไม่อยู่ในพระราชบัญญัติ 2 โมนิกาตั้งข้อสังเกตว่าแม้ว่าเธออาจดูเหมือนผู้นำที่ดี แต่ซาโยริมักจะดีกว่าเมื่อต้องติดต่อกับผู้คน โดยเฉพาะอย่างยิ่งในการไกล่เกลี่ย เธอพยายามอย่างเต็มที่เพื่อช่วยให้ทุกคนมีความสุขและไม่ชอบความสนใจที่มุ่งไปที่ความเป็นอยู่ที่ดีของเธอ เพราะเธอรู้สึกว่าไม่คู่ควรกับสิ่งใดๆ ที่คนอื่นมอบให้เธอ</p>
+
+<p>นอกจากนี้ Sayori ยังได้รับการแนะนำให้รู้จักในฐานะเพื่อนสมัยเด็กของตัวเอกอีกด้วย ดูเหมือนตัวเอกจะมองว่าเธอเป็นพวกไร้สาระและน่ารำคาญเล็กน้อยในช่วงเริ่มเกม แต่เขาเริ่มเห็นใจเธอหลังจากที่เธอสารภาพว่าเธอเป็นโรคซึมเศร้า</p>
+
+<p>อาการซึมเศร้าของซาโยริทำให้เธอไม่เป็นระเบียบ และเธอมักจะไม่สามารถหาเหตุผลที่จะลุกจากเตียงในตอนเช้าเมื่อพยายามตื่น ซึ่งเป็นสาเหตุที่เธอมักจะไปโรงเรียนสาย ห้องของเธอซึ่งตัวเอกทำความสะอาดให้เธอเป็นประจำก็ถูกมองว่าไม่เป็นระเบียบเช่นกัน ตัวเอกตั้งข้อสังเกตว่าเธอไม่มีการเปลี่ยนแปลงมากนัก และการเปลี่ยนแปลงที่ตัวเอกสังเกตเห็นในตัวเธอในภายหลังนั้นเกิดจากการรบกวนของโมนิกา ซึ่งขยายความภาวะซึมเศร้าและแนวโน้มการฆ่าตัวตายของเธอ</p>
+
+<p>อาการซึมเศร้าของเธอดูเหมือนจะทำให้เธอเชื่อว่าเธอไม่สมควรได้รับความรัก แต่ในขณะเดียวกัน เธอก็ยังต้องการที่จะได้รับความรัก โดยเฉพาะจากตัวเอกที่เธอแอบชอบ เมื่อผู้เล่นเลือกที่จะไล่ตามสาวคนอื่น ๆ ซาโยริก็ดูจะทนทุกข์เพราะเธอแอบอยากให้ตัวเอกรักเธอในขณะเดียวกันก็รู้สึกผิดที่รู้สึกแย่ตั้งแต่แรก โมนิก้าก็ค่อยๆ ขยายความภาวะซึมเศร้าของเธอออกมา อย่างไรก็ตาม หากผู้เล่นเลือกที่จะไล่ตามซาโยริอย่างแข็งขัน เธอจะยังคงรู้สึกผิดเนื่องจากเธอไม่เชื่อว่าเธอสมควรได้รับความรัก ไม่ว่าผู้เล่นจะเลือกอย่างไรก็ตาม ซาโยริจะฆ่าตัวตายหนึ่งวันก่อนเทศกาล ความสัมพันธ์ระหว่างเธอกับตัวเอกและความสุขของคนอื่นเป็นกลไกหลักในการรับมือของเธอ เพราะเธอเชื่อว่าถ้าเธอทำให้คนอื่นมีความสุข เธอก็ไม่มีเหตุผลที่จะต้องไม่มีความสุขเลย</p>
+
+<p>เมื่อซาโยริสารภาพรักกับตัวเอก เธอจะกอดเขาหรือวิ่งหนีไปด้วยสีหน้าเจ็บปวด ขึ้นอยู่กับว่าผู้เล่นยอมรับความรู้สึกของเธอหรือปฏิเสธพวกเขา วันรุ่งขึ้นพระเอกจะไปโรงเรียนโดยไม่มีเธอ สมมุติว่าเธอยังหลับอยู่ ที่นั่นเขาจะอ่านบทกวีที่ซาโยริเขียนชื่อ " % " โดยมีคำว่า "ออกไปจากหัวฉัน" ซ้ำๆ อยู่ตลอดเวลา นี่จะทำให้ตัวเอกตื่นตระหนกและไปที่บ้านของซาโยริซึ่งเธอจะถูกพบว่าเป็นศพแขวนคอจากบ่วงที่มีเลือดอยู่บนมือ หากผู้เล่นพยายามโหลดบันทึกหลังจากที่เธอเสียชีวิต เกมจะระบุว่าไฟล์บันทึกเสียหายและรีบูตใหม่ทั้งหมดราวกับว่าซาโยริไม่เคยมีอยู่จริง นี่จะเป็นจุดสิ้นสุดของบท 1</p>
+
+<p>หลังจากที่ Monika กู้คืนไฟล์ของสมาชิกแต่ละคนแล้ว เมื่อเริ่มองก์ที่ 4 ซาโยริจะปรากฏตัวในเกมอีกครั้งโดยยังมีชีวิตอยู่และสบายดี นัตสึกิและยูริก็จะอยู่ที่นั่นเช่นกันโดยไม่ได้รับอันตรายเช่นกัน คราวนี้ ซาโยริเป็นประธานสโมสรแทนโมนิก้า ในช่วงท้ายของเกม จะมีตอนจบ 1 ใน 2 แบบเกิดขึ้น หากผู้เล่นบรรลุตอนจบตามปกติ ซาโยริจะเปิดเผยว่าเนื่องจากตอนนี้เธอเองก็ตระหนักรู้ในตัวเองแล้ว อาจเป็นเพราะตอนนี้เธอเป็นประธานสโมสร และจะขอบคุณผู้เล่นที่ลบโมนิก้า จากนั้นฉากก็ย้ายจากคลับไปยังห้องที่โมนิก้าอยู่ในระหว่างองก์ที่ 3ขณะที่เธออ้างว่าเธอจะมีความสุขแค่ไหนที่ได้อยู่กับผู้เล่นตลอดไป โมนิก้าจะลบซาโยริโดยระบุว่าเธอ "จะไม่ยอมให้เธอทำร้ายเขา" จากนั้นจะลบเกมทั้งหมด</p>
+
+<p>หากการจบที่ดีสำเร็จ ซาโยริจะขอบคุณผู้เล่นที่ใช้เวลากับสาวๆ แทน โดยบอกว่านั่นคือทั้งหมดที่เธอต้องการ จากนั้นเธอจะขอบคุณผู้เล่นที่เล่น Doki Doki Literature Club และบอกทั้งน้ำตาว่าพวกเขาทุกคนรักผู้เล่นคนนี้</p>
+
+<p>เป็นที่น่าสังเกตว่าบทที่ 1 กำหนดว่าซาโยรินอนหลับเพราะภาวะซึมเศร้า ซึ่งเป็นสาเหตุที่เธอมักจะไปโรงเรียนสาย อย่างไรก็ตาม ในบทที่ 4 ซาโยริบอกตัวเอกว่าช่วงนี้เธอตื่นตรงเวลา นี่ก็หมายความว่าภาวะซึมเศร้าของเธอได้รับการบรรเทาลงในระดับหนึ่ง</p>
+
+<h3>
+	คำศัพท์ ที่ชอบ
+</h3>
+<hr size="2px" color="purple">
+<center><p><b>บทที่ 1</b></p></center>
+	<p>
+		<br>- การผจญภัย คนเดียว น่าทึ่ง ยอดเยี่ยม
+		<br>- ความงาม เตียง ความสุข แตกหัก
+		<br>- สงบ, มีเสน่ห์, ร่าเริง, วัยเด็ก, เงอะงะ, สีสัน, สบายใจ, ร้องไห้
+		<br>- เต้นรำ ความมืด ฝันกลางวัน ทำให้ตาพร่า ความตาย ความพ่ายแพ้ ความหดหู่
+		<br>- โอบกอด ว่างเปล่า ตื่นเต้น ไม่ธรรมดา
+		<br>- ครอบครัว ความกลัว ขนนก หิ่งห้อย ดอกไม้ไฟ ดอกไม้ การบิน การให้อภัย เพื่อน ความสนุกสนาน
+		<br>- ความโศกเศร้า
+		<br>- ความสุข หัวใจ วันหยุด ความหวัง สิ้นหวัง เจ็บปวด
+		<br>- จอย
+		<br>- หัวเราะ ขี้เกียจ ดัง รัก โชคดี
+		<br>- การแต่งงาน ความทรงจำ ความทุกข์ยาก โชคร้าย ดนตรี
+		<br>- ธรรมชาติ
+		<br>- มหาสมุทร
+		<br>- ความเจ็บปวด ปาร์ตี้ ความหลงใหล ความสงบสุข เล่น การอธิษฐาน ล้ำค่า คำสัญญา
+		<br>- สายรุ้ง เมฆฝน โรแมนติก กุหลาบ
+		<br>- ความโศกเศร้า รอยแผลเป็น ความอัปยศ ความโง่เขลา ร้องเพลง ยิ้ม สดใส พิเศษ แดดออก พระอาทิตย์ตก อ่อนหวาน
+		<br>- น้ำตา ร่วมกัน โศกนาฏกรรม สมบัติ
+		<br>- ไม่สมหวัง
+		<br>- วันหยุด
+		<br>- อบอุ่น มหัศจรรย์
+	</p>
+
+				
+		</div>
+	</div>
+</div>
+
+				<a href="https://www.youtube.com/watch?v=BbeeuzU5Qc8">
+					<img src="img/sayori-sticker.png" width="8%">
+					<img src="img/sayori-sticker1.png" width="8%">
+				</a>
+</article>
+</section>
+
+<script>
+// เพิ่มบุ่มให้ทำงาน
+let mybutton = document.getElementById("myBtn");
+
+// ระยะ
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// กดแล้วข้ึน
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>
